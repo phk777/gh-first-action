@@ -1,0 +1,11 @@
+name: First Workflow 
+#when this wf should be executed?
+on: workflow_dispatch #to manually trigger 
+jobs: 
+  firstjob: 
+    runs-on: ubuntu-latest
+    steps: 
+      - name: print greeting
+        run: echo "Hello Harish"
+      - name: print bye 
+        run: echo "Done bye"
